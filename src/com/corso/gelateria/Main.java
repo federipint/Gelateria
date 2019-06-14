@@ -72,7 +72,6 @@ public class Main {
 		GustoFactory factory = GustoFactory.getInstance();
 		
 		factory.addGusto(nome, prezzo, ingredienti, quantita);
-
 	}
 
 	

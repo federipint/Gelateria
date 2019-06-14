@@ -35,6 +35,10 @@ public class GustoFactory {
 		listaGusti.add(gusto);
 	}
 
+	// Metodo di prova
+	public Gusto getGusto(int i) {
+		return listaGusti.get(i);
+	}
 	
 	
 	
