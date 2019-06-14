@@ -8,8 +8,6 @@ public class ConoFactory {
 		private static ConoFactory singleton;
 		private List<Cono> listaConi;
 		
-		
-		
 		private ConoFactory() {
 			listaConi = new ArrayList<Cono>();
 			

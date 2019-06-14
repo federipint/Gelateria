@@ -1,9 +1,7 @@
 package com.corso.gelateria.model;
 
 import java.util.ArrayList;
-
-
-
+import java.util.Arrays;
 
 public class GustoFactory {
 
@@ -16,6 +14,7 @@ public class GustoFactory {
 		listaGusti= new ArrayList<Gusto>();
 		
 	}
+	
 	public static GustoFactory getInstance() {
 		if(singleton == null) {
 			singleton = new GustoFactory();
@@ -25,9 +24,14 @@ public class GustoFactory {
 	}
 	
 		
-	public void addGusto(String nome, double prezzo, String ingredienti, double quantità) { 
+	public void addGusto(String nome, double prezzo, String ingredienti, double quantita) { 
+
 		
-		Gusto gusto = new Gusto(nome, prezzo, ingredienti, quantità);
+		// creo ArrayList dando al costruttore una lista creata tramite metodo statico asList della
+		// classe Arrays. Divido la stringa ingredienti con il metodo split dando come parametro
+		// i caratteri con cui separare la stringa.
+		
+		Gusto gusto = new Gusto(nome, prezzo, new ArrayList<String>(Arrays.asList(ingredienti.split(", "))), quantita);
 		listaGusti.add(gusto);
 	}
 

@@ -62,16 +62,16 @@ public class Main {
 		ingredienti = scanner.nextLine();
 		
 		System.out.println("Prezzo: ");
-		prezzo = scanner.nextLine();
+		prezzo = Double.parseDouble(scanner.nextLine());
 		
 		System.out.println("Quantità: ");
-		ingredienti = scanner.nextLine();
+		quantita = Double.parseDouble(scanner.nextLine());
 		
 		System.out.println("-------------------------------------");
 		
 		GustoFactory factory = GustoFactory.getInstance();
 		
-		factory.add(nome, prezzo, ingredienti, quantita);
+		factory.addGusto(nome, prezzo, ingredienti, quantita);
 
 	}
 

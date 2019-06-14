@@ -7,14 +7,14 @@ public class Gusto {
 	private String nome;
 	private double prezzo;
 	private ArrayList<String> ingredienti;
-	private double quantità;
+	private double quantita;
 	
 			
-	public Gusto(String nome, double prezzo, ArrayList<String> ingredienti, double quantità) {
+	public Gusto(String nome, double prezzo, ArrayList<String> ingredienti, double quantita) {
 		this.nome = nome;
 		this.prezzo = prezzo;
 		this.ingredienti = ingredienti;
-		this.quantità = quantità;
+		this.quantita = quantita;
 	}
 	public String getNome() {
 		return nome;
@@ -34,11 +34,11 @@ public class Gusto {
 	public void setIngredienti(ArrayList<String> ingredienti) {
 		this.ingredienti = ingredienti;
 	}
-	public double getQuantità() {
-		return quantità;
+	public double getQuantita() {
+		return quantita;
 	}
-	public void setQuantità(double quantità) {
-		this.quantità = quantità;
+	public void setQuantita(double quantita) {
+		this.quantita = quantita;
 	}
 	
 	
