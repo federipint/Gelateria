@@ -21,8 +21,8 @@ public class ConoFactory {
 			return singleton;
 		}
 		
-		public void addCono(double prezzo, List<String> gusti) {
-			Cono newCono= new Cono(prezzo, gusti);
+		public void addCono(List<Gusto> palline) {
+			Cono newCono= new Cono(palline);
 			listaConi.add(newCono);
 		}
 }

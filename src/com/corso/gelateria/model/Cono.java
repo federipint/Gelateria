@@ -3,29 +3,27 @@ package com.corso.gelateria.model;
 import java.util.List;
 
 public class Cono {
+
+	private List<Gusto> palline;
 	
-	private double prezzo;
-	private List<String> gusti;
-	
-	public Cono(double prezzo, List<String> gusti) {
-		this.prezzo=prezzo;
-		this.gusti=gusti;
+	public Cono(List<Gusto> palline) {
+		this.palline=palline;
 	}
 	
 	public double getPrezzo() {
+		double prezzo = 0;
+		for(Gusto pallina : this.palline) {
+			prezzo += pallina.getPrezzo();
+		}
 		return prezzo;
 	}
 	
-	public void setPrezzo(double prezzo) {
-		this.prezzo = prezzo;
+	public List<Gusto> getPalline() {
+		return palline;
 	}
 	
-	public List<String> getGusti() {
-		return gusti;
-	}
-	
-	public void setGusti(List<String> gusti) {
-		this.gusti = gusti;
+	public void setPalline(List<Gusto> palline) {
+		this.palline = palline;
 	}
 
 	

@@ -43,7 +43,7 @@ public class Gusto {
 	
 	@Override
 	public String toString() {
-		return this.getNome() + "  " +  this.getPrezzo() + "â‚¬  " +  this.getQuantita() + "g  Ingr: " +  this.getIngredienti();
+		return this.getNome() + "  " +  this.getPrezzo() + "Euro‚  " +  this.getQuantita() + "g  Ingr: " +  this.getIngredienti();
 	}
 
 	
